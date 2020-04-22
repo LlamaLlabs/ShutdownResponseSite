@@ -9,13 +9,13 @@
 			.container {
 				max-width: 1240px;
 				margin: 0 auto;
-				padding-top: 114px;
+				padding: 114px 25px;				
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 			}
 			h1 {
-				font-family: Termina;
+				font-family: termina, sans-serif;
 				font-style: normal;
 				font-weight: 800;
 				font-size: 80px;
@@ -24,6 +24,133 @@
 				text-align: center;
 				/* #FAF8F8 */
 				color: #FAF8F8;
+				text-transform: uppercase;
+				margin: 30px 0;			
+			}
+
+			h2 {
+				font-family: proxima-nova, sans-serif;
+				font-style: normal;
+				font-weight: 800;
+				font-size: 35px;
+				line-height: 35px;
+				text-align: center;
+				letter-spacing: 0.1em;
+				color: #00A6BB;
+				padding: 14px 30px;
+				background: #000000;
+				border-radius: 50px;
+				margin: 0 0 95px;
+				text-transform: uppercase;
+			}
+
+			p {
+				font-family: proxima-nova, sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 40px;
+				/* or 133% */
+				color: #000000;
+				margin: 0;
+				max-width: 100%;
+				width: 735px;
+			}
+
+			p + p {
+				color: #FAF8F8;
+			}
+
+			form  {
+				max-width: 100%;
+				width: 735px;
+				display: flex;	
+				margin: 45px 0 55px;	
+			}
+
+			button[type="submit"] {
+				background: #381BEA;
+				border: none;
+				font-family: proxima-nova, sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 28px;
+				text-align: center;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				font-feature-settings: 'pnum' on, 'lnum' on;
+				color: #FFFFFF;
+				width: 222px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0;
+				padding: 10px;
+			}
+
+			input {
+				padding: 9px 20px 8px;
+				border: none;
+				font-family: proxima-nova, sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 28px;
+				font-feature-settings: 'pnum' on, 'onum' on;
+				color: #9695B5;
+				flex: 1;
+				margin: 0;
+			}
+
+			.footer {
+				max-width: 100%;
+				width: 735px;
+			}
+
+			.footer p {				
+				font-size: 12px;
+				line-height: 16px;
+				font-feature-settings: 'pnum' on, 'onum' on;
+				color: #FAF8F8;
+				width: 528px;				
+			}
+
+			@media (max-width: 768px) {
+				.container {
+					padding-top: 45px;
+					padding-bottom: 40px;
+				}
+
+				h1 {
+					font-size: 32px;
+					line-height: 45px;
+				}
+
+				h2 {
+					font-size: 14px;
+					line-height: 20px;
+					margin-bottom: 60px;
+				}
+
+				p {
+					font-size: 20px;
+					line-height: 25px;
+				}
+
+				form {
+					flex-wrap: wrap;
+					margin-bottom: 30px;
+				}
+
+				input, button[type="submit"] {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+
+				svg {
+					width: 128px;
+				}
 			}
 		</style>
 	</head>
@@ -43,13 +170,15 @@
 			</svg>
 			<h1>Everybody Wins</h1>
 			<h2>Shutdown Response</h2>
-			<p>The current response to COVID-19 is not sustainable, and is causing much more harm than necessary. We’re proposing a solution where #everybodywins.</p>
+			<p>The current response to COVID-19 is not sustainable, and is causing much more harm than necessary. We're proposing a solution where #everybodywins.</p>
 			<p>Sign up to learn more.</p>
 			<form>
 				<input type="text" name="" placeholder="Your Email..." />
 				<button type="submit">Subscribe</button>
 			</form>
-			<p class="footer">By submitting your email, you are agreeing to receive promotional communications from the Everyone Wins Shutdown Response team.</p>
+			<div class="footer">
+				<p>By submitting your email, you are agreeing to receive promotional communications from the Everyone Wins Shutdown Response team.</p>
+			</div>
 		</div>
 	</body>
 </html>
