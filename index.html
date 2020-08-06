@@ -61,6 +61,23 @@
 				text-transform: uppercase;
 			}
 
+			h2.preserve {
+				font-family: Termina;
+				font-style: normal;
+				font-weight: 800;
+				font-size: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: #0092A6;
+				background: none;
+				padding: 0;
+				margin: 60px 0 30px;
+			}
+
+			h2.preserve + p a {
+				color: #0092A6;
+			}
+
 			p {
 				font-family: proxima-nova, sans-serif;
 				font-style: normal;
@@ -137,7 +154,7 @@
 
 			.hashtag {
 				font-weight: 900;
-				color: #FF5F4D;
+				color: #0092A6;
 			}
 
 			.youtube {
@@ -199,6 +216,39 @@
 				height: 258px;
 			}
 
+			.shop-banner {
+				background: url('./EW_Photo_Set_Both_0_angle 1.jpg');
+				background-size: cover;
+				min-height: 475px;
+				background-position: center;
+				position: relative;
+			}
+
+			.shop-banner a {
+				width: 257px;
+				height: 52px;
+				background: #FF5F4D;
+				border-radius: 50px;
+				text-decoration: none;
+				color: #FAF8F8;
+				font-family: Proxima Nova;
+				font-style: normal;
+				font-weight: 800;
+				font-size: 22px;
+				line-height: 35px;
+				text-align: center;
+				letter-spacing: 0.1em;
+				padding: 9px 0 8px;
+				text-transform: uppercase;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
 			@media (max-width: 768px) {
 				.container, .hero .container {
 					padding-top: 45px;
@@ -214,6 +264,11 @@
 					font-size: 14px;
 					line-height: 20px;
 					margin-bottom: 60px;
+				}
+
+				h2.preserve {
+					font-size: 30px;
+					line-height: 40px;
 				}
 
 				p {
@@ -272,14 +327,20 @@
 
 				<h1>Everybody Wins</h1>
 				<h2>Crisis Response</h2>
-				<p>The current response to COVID-19 is not sustainable.  We are offering a new and better way to respond where <span class="hashtag">#EverybodyWins.</span></p>		
+				<p>The current response to COVID-19 is not sustainablenor effective, and is causing extensive damage. We are offering a solution where <span class="hashtag">#EverybodyWins.</span></p>		
 				<!-- Begin YouTube Embed -->				
 				<div class="youtube">
 					<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/7yyLjLqeQxc' frameborder='0' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 				</div>
 				<!-- End YouTube Embed -->
 				<p class="view-video">View our thesis video <a href="https://youtu.be/7yyLjLqeQxc">on YouTube.</a></p>
+				<h2 class="preserve">PRESERVE LIBERTY</h2>
+				<p>We're offering pins and stickers to communicate your exemption from wearing masks and social distancing. See more at <a href="https://shop.crisisresponse.co">shop.crisisresponse.co</a></p>
 			</div>
+		</div>
+
+		<div class="shop-banner">
+			<a href="https://shop.crisisresponse.co">Shop Now</a>
 		</div>
 
 		<div class="learn-more-banner">
